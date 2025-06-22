@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema Debat</title>
+    <link rel="icon" href="image/SAKTI.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="animated-background">
+        <div class="geometric-shape shape-1"></div>
+        <div class="geometric-shape shape-2"></div>
+        <div class="geometric-shape shape-3"></div>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>✨ HIMAPRO TI SAKTI</h1>
+            <p>Ayo Dengarkan Lalu Tentukan!</p>
+        </div>
+
+        <div class="cards-container" id="cardsContainer">
+            <div class="card" data-id="1" onclick="openModal(this)">
+                <div class="card-number">1</div>
+                <h3 class="card-title">Program Kerja</h3>
+            </div>
+
+            <div class="card" data-id="2" onclick="openModal(this)">
+                <div class="card-number">2</div>
+                <h3 class="card-title">Kepemimpinan</h3>
+            </div>
+
+            <div class="card" data-id="3" onclick="openModal(this)">
+                <div class="card-number">3</div>
+                <h3 class="card-title">Manajemen Organisasi</h3>
+            </div>
+
+            <div class="card" data-id="4" onclick="openModal(this)">
+                <div class="card-number">4</div>
+                <h3 class="card-title">Komunikasi Internal</h3>
+            </div>
+
+            <div class="card" data-id="5" onclick="openModal(this)">
+                <div class="card-number">5</div>
+                <h3 class="card-title">Hubungan Eksternal</h3>
+            </div>
+
+            <div class="card" data-id="6" onclick="openModal(this)">
+                <div class="card-number">6</div>
+                <h3 class="card-title">Keuangan</h3>
+            </div>
+
+            <div class="card" data-id="7" onclick="openModal(this)">
+                <div class="card-number">7</div>
+                <h3 class="card-title">Manajemen SDM</h3>
+            </div>
+
+            <div class="card" data-id="8" onclick="openModal(this)">
+                <div class="card-number">8</div>
+                <h3 class="card-title">Kekeluargaan & Solidaritas</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle">Judul Tema</h2>
+                <p id="modalSubtitle">Studi kasus dan implementasi nyata</p>
+            </div>
+            <div class="modal-body">
+                <div id="caseStudies"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
